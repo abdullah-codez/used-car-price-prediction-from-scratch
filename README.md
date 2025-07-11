@@ -1,4 +1,4 @@
-# **🚗 Used Car Price Prediction – Linear Regression from Scratch**
+# **Used Car Price Prediction – Linear Regression from Scratch**
 
 A deep-dive machine learning project where I **manually implemented multiple linear regression** to predict used car prices from structured data, with full preprocessing, feature engineering, and optimization — no Scikit-learn model training shortcuts used.
 
@@ -39,7 +39,7 @@ Predict the selling price of a used car based on its specs, brand/model, engine 
 
 ## **🛠 Pipeline Overview**
 
-### **🔹 1\. Data Cleaning & Exploration**
+### ** 1\. Data Cleaning & Exploration**
 
 * Dropped ID and  redundant column (`Unnamed: 0`, `car_name`)
 
@@ -47,13 +47,13 @@ Predict the selling price of a used car based on its specs, brand/model, engine 
 
 * Identified heavily skewed numeric features
 
-### **🔹 2\. Feature Transformation**
+### ** 2\. Feature Transformation**
 
 * Applied `log1p()` or `sqrt()` on skewed features
 
 * Capped extreme outliers
 
-### **🔹 3\. Categorical Encoding**
+### ** 3\. Categorical Encoding**
 
 * Used **mean target encoding** for high-cardinality columns (`brand`, `model`) *after* train-test split to avoid leakage
 
@@ -61,7 +61,7 @@ Predict the selling price of a used car based on its specs, brand/model, engine 
 
 * Label encoding for categorical data
 
-### **🔹 4\. Feature Engineering**
+### ** 4\. Feature Engineering**
 
 Manually added meaningful interaction/polynomial features:
 
@@ -71,13 +71,13 @@ Manually added meaningful interaction/polynomial features:
 
 This massively boosted performance (R² from 0.37 → 0.54 on train set).
 
-### **🔹 5\. Feature Scaling**
+### ** 5\. Feature Scaling**
 
 * Standardized all numeric features **before** train-test split
 
 * Applied same scaling on engineered features
 
-### **🔹 6\. Manual Model Training**
+### ** 6\. Manual Model Training**
 
 * Implemented custom **gradient descent** (no Scikit-learn models)
 
@@ -85,7 +85,7 @@ This massively boosted performance (R² from 0.37 → 0.54 on train set).
 
 * Tuned learning rate and epochs for convergence
 
-### **🔹 7\. Evaluation**
+### ** 7\. Evaluation**
 
 * Transformed predictions back using `expm1()` to compare in real price scale
 

@@ -150,6 +150,5 @@ This massively boosted performance (R² from 0.37 → 0.54 on train set).
 
 ## **⭐ If You Like This**
 
-* Give this repo a ⭐ on GitHub  
-* Connect with me on [\[LinkedIn\](https://www.linkedin.com/in/muhammad-abdullah-iftikhar-543478361/)](https://chatgpt.com/c/686f99db-39f8-800f-a4bc-7f7cac502ca1#) 
+* Give this repo a ⭐ on GitHub
 
